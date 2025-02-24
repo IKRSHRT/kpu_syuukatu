@@ -1,0 +1,124 @@
+.dashboard-nav {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .nav-title {
+    color: #5AB9C1;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  .nav-button {
+    background-color: #ed8218;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #d36d0e;
+    transform: translateY(-2px);
+  }
+  
+  .es-register-container {
+    min-height: calc(100vh - 64px);
+    background: linear-gradient(to bottom right, rgba(90, 185, 193, 0.05), rgba(237, 130, 24, 0.05));
+    padding: 2rem 1rem;
+  }
+  
+  .es-register-card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .es-title {
+    color: #5AB9C1;
+  }
+  
+  .es-back-button {
+    color: #ed8218;
+    border: 2px solid #ed8218;
+    transition: all 0.3s ease;
+  }
+  
+  .es-back-button:hover {
+    background-color: #ed8218;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  .form-label {
+    color: #374151;
+  }
+  
+  .required-label::after {
+    content: " *";
+    color: #ef4444;
+    font-weight: bold;
+  }
+  
+  .es-input {
+    border: 2px solid #e5e7eb;
+    transition: all 0.3s ease;
+  }
+  
+  .es-input:focus {
+    border-color: #5AB9C1;
+    box-shadow: 0 0 0 2px rgba(90, 185, 193, 0.1);
+    outline: none;
+  }
+  
+  .es-select {
+    border: 2px solid #e5e7eb;
+    transition: all 0.3s ease;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M2.5 4.5L6 8L9.5 4.5' stroke='%236B7280' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.5em 1.5em;
+  }
+  
+  .es-select:focus {
+    border-color: #5AB9C1;
+    box-shadow: 0 0 0 2px rgba(90, 185, 193, 0.1);
+    outline: none;
+  }
+  
+  .es-textarea {
+    border: 2px solid #e5e7eb;
+    transition: all 0.3s ease;
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .es-textarea:focus {
+    border-color: #5AB9C1;
+    box-shadow: 0 0 0 2px rgba(90, 185, 193, 0.1);
+    outline: none;
+  }
+  
+  .es-submit-button {
+    background-color: #5AB9C1;
+    transition: all 0.3s ease;
+  }
+  
+  .es-submit-button:not(:disabled):hover {
+    background-color: #4da8b0;
+    transform: translateY(-2px);
+  }
+  
+  .es-submit-button:disabled {
+    background-color: #93d0d5;
+    cursor: not-allowed;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .es-register-card {
+      padding: 1.5rem;
+    }
+  }

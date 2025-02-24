@@ -1,0 +1,50 @@
+/* app/auth/style.css */
+
+.auth-container {
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, rgba(90, 185, 193, 0.05), rgba(237, 130, 24, 0.05));
+  }
+  
+  .auth-button-primary {
+    background-color: #5AB9C1;
+    transition: all 0.3s ease;
+  }
+  
+  .auth-button-primary:hover {
+    background-color: #4da8b0;
+    transform: translateY(-2px);
+  }
+  
+  .auth-button-secondary {
+    border: 2px solid #ed8218;
+    color: #ed8218;
+    transition: all 0.3s ease;
+  }
+  
+  .auth-button-secondary:hover {
+    background-color: #ed8218;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  .back-link {
+    color: #5AB9C1;
+    transition: color 0.3s ease;
+  }
+  
+  .back-link:hover {
+    color: #4da8b0;
+  }
+  
+  .auth-card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .auth-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }

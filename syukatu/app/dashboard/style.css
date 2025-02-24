@@ -1,0 +1,254 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, rgba(90, 185, 193, 0.05), rgba(237, 130, 24, 0.05));
+}
+
+.dashboard-nav {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav-title {
+  color: #5AB9C1;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-button {
+  background-color: #ed8218;
+  transition: all 0.3s ease;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.nav-button:hover {
+  background-color: #d36d0e;
+  transform: translateY(-2px);
+}
+
+/* ナビゲーションリンク */
+.nav-link {
+  color: #4b5563;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
+  margin: 0 1rem;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #5AB9C1;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #5AB9C1;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* タブボタン */
+.dashboard-tabs {
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.tab-button {
+  padding: 0.75rem 1rem;
+  margin: 0 0.5rem;
+  font-weight: 500;
+  color: #6b7280;
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+.tab-button:hover {
+  color: #5AB9C1;
+  background-color: rgba(90, 185, 193, 0.05);
+}
+
+.tab-active {
+  color: #5AB9C1;
+  background-color: rgba(90, 185, 193, 0.1);
+  font-weight: 600;
+}
+
+/* ダッシュボードコンテンツ */
+.dashboard-content {
+  padding: 2rem 1rem;
+}
+
+.dashboard-welcome {
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.dashboard-welcome h1 {
+  color: #5AB9C1;
+}
+
+.latest-content {
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.latest-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(90, 185, 193, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.latest-header h2 {
+  color: #5AB9C1;
+}
+
+.latest-items {
+  display: grid;
+  gap: 1rem;
+}
+
+.latest-item {
+  display: block;
+  padding: 1rem;
+  background-color: rgba(249, 250, 251, 0.8);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(229, 231, 235, 0.5);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.latest-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-color: rgba(90, 185, 193, 0.3);
+}
+
+.latest-info h3 {
+  color: #111827;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.latest-info p {
+  color: #6b7280;
+}
+
+.latest-date {
+  color: #ed8218;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.dashboard-add-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #ed8218;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.dashboard-add-button:hover {
+  background-color: #d36d0e;
+  transform: translateY(-2px);
+}
+
+.empty-state {
+  padding: 3rem;
+  text-align: center;
+  background-color: rgba(249, 250, 251, 0.8);
+  border-radius: 0.5rem;
+  color: #6b7280;
+  border: 1px dashed rgba(90, 185, 193, 0.2);
+}
+
+/* プロフィールカード関連 */
+.profile-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-input {
+  border: 2px solid #e5e7eb;
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+.profile-input:focus {
+  border-color: #5AB9C1;
+  box-shadow: 0 0 0 2px rgba(90, 185, 193, 0.1);
+  outline: none;
+}
+
+.profile-select {
+  border: 2px solid #e5e7eb;
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M2.5 4.5L6 8L9.5 4.5' stroke='%236B7280' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+}
+
+.profile-select:focus {
+  border-color: #5AB9C1;
+  box-shadow: 0 0 0 2px rgba(90, 185, 193, 0.1);
+  outline: none;
+}
+
+.submit-button {
+  background-color: #5AB9C1;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #4da8b0;
+  transform: translateY(-2px);
+}
+
+.loading-spinner {
+  border-top-color: #5AB9C1;
+  border-bottom-color: #5AB9C1;
+}
+
+@media (max-width: 768px) {
+  .dashboard-tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0.5rem;
+  }
+  
+  .tab-button {
+    display: inline-block;
+  }
+  
+  .nav-link {
+    margin: 0 0.5rem;
+  }
+}

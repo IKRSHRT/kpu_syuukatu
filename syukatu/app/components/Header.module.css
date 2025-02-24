@@ -1,0 +1,199 @@
+/* /components/Header.module.css */
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 40;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .navFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+  }
+  
+  .logoSection {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logoText {
+    color: #5AB9C1;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-decoration: none;
+  }
+  
+  .navLinks {
+    display: flex;
+    margin-left: 2.5rem;
+  }
+  
+  .navLink {
+    color: #4b5563;
+    font-weight: 500;
+    margin: 0 1rem;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.2s;
+  }
+  
+  .navLink:hover {
+    color: #5AB9C1;
+  }
+  
+  .navLink::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #5AB9C1;
+    transition: width 0.3s;
+  }
+  
+  .navLink:hover::after {
+    width: 100%;
+  }
+  
+  .userSection {
+    display: flex;
+    align-items: center;
+  }
+  
+  .userMenu {
+    position: relative;
+  }
+  
+  .userButton {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    border-radius: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .userButton:hover {
+    background-color: rgba(229, 231, 235, 0.5);
+  }
+  
+  .avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #5AB9C1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin-right: 0.5rem;
+  }
+  
+  .userName {
+    margin-right: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .arrow {
+    transition: transform 0.2s;
+  }
+  
+  .arrowUp {
+    transform: rotate(180deg);
+  }
+  
+  .dropdown {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 0.5rem);
+    width: 14rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    z-index: 50;
+    overflow: hidden;
+    animation: fadeIn 0.2s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-0.25rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .dropdownHeader {
+    padding: 1rem;
+    border-bottom: 1px solid #f3f4f6;
+  }
+  
+  .dropdownName {
+    font-weight: 500;
+    margin: 0;
+    color: #1f2937;
+  }
+  
+  .dropdownDept {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0.25rem 0 0 0;
+  }
+  
+  .dropdownItem {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    background: transparent;
+    border: none;
+    font-size: 0.875rem;
+    color: #4b5563;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .dropdownItem:hover {
+    background-color: #f9fafb;
+    color: #5AB9C1;
+  }
+  
+  .logoutButton {
+    border-top: 1px solid #f3f4f6;
+    color: #ef4444;
+  }
+  
+  .logoutButton:hover {
+    background-color: #fef2f2;
+    color: #ef4444;
+  }
+  
+  /* メディアクエリ */
+  @media (max-width: 768px) {
+    .navLinks {
+      display: none;
+    }
+    
+    .userName {
+      display: none;
+    }
+  }
