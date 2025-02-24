@@ -2,9 +2,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { supabase } from "../lib/supabase";
+import { supabase } from "../../lib/supabase";
 import { useRouter } from 'next/navigation';
-import Header from "../components/Header";
+import Header from "../../components/Header";
 import './style.css';
 
 export default function CodingTestRegisterPage() {
