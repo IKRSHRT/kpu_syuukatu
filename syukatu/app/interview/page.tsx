@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react';
 import { supabase } from '@/lib/supabase';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import Header from '@/components/Header';
-import LoadingState from '@/components/LoadingState';
+import Header from "../../components/Header";
+import LoadingState from "../../components/LoadingState";
 import './style.css';
 
 interface InterviewEntry {

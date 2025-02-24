@@ -4,8 +4,8 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '@/lib/supabase';
 import { useRouter } from 'next/navigation';
-import Header from '@/components/Header';
-import LoadingState from '@/components/LoadingState';
+import Header from "../../components/Header";
+import LoadingState from "../../components/LoadingState";
 import LatestInfoTab from '@/components/LatestInfoTab';
 import useLatestData from '@/hooks/useLatestData';
 import './style.css';
