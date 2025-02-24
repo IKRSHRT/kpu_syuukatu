@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { GeistSans, GeistMono } from "@vercel/fonts";
-import "./globals.css";
+import "../globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
