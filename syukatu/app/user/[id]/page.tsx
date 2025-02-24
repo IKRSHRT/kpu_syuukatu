@@ -2,10 +2,10 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { supabase } from "../lib/supabase";
+import { supabase } from "../../lib/supabase";
 import { useRouter, useParams } from 'next/navigation';
-import Header from "../components/Header";
-import LoadingState from "../components/LoadingState";
+import Header from "../../components/Header";
+import LoadingState from "../../components/LoadingState";
 import Link from 'next/link';
 import './style.css';
 
