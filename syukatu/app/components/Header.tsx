@@ -8,8 +8,8 @@ import { supabase } from '../lib/supabase';
 import styles from './Header.module.css';
 
 interface HeaderProps {
-  userName: string | null;
-  userDepartment: string | null;
+  userName: string | undefined;
+  userDepartment: string | undefined;
   userId?: string | null;
 }
 
